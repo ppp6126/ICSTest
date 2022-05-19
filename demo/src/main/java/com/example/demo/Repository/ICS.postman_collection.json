@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "5a7b9123-43fc-4aef-9c67-38c386171362",
+		"name": "ICS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SearchFilterOrder",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"status\" : \"ชำระเงินเรียบร้อย\"\r\n}\r\n    // \"datestart\" :\"2022-05-15\",\r\n    // \"dateend\" :\"2022-05-17\"",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/SearchFilterOrder",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SearchFilterOrder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateStatus",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"37\",\r\n    \"productName\" : \"เสื้อผู้หญิง\",\r\n    \"status\" : \"ชำระเงินเรียบร้อย\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/updateStatus",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"updateStatus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SearchFilter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"size\" :[\"SX\"],\r\n    \r\n}\r\n// \"countProduct\" : 4",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/SearchFilter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SearchFilter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addOrder",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"countProduct\" : 5,\r\n    \"address\" : \"10/7 ต.สบบง อ.ภูซาง จ.พะเยา\" ,\r\n    \"productName\" : \"เสื้อผู้ชาย\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/addOrder",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addOrder"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
